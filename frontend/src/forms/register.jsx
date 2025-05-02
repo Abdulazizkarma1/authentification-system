@@ -90,6 +90,7 @@ const RegisterForm = () => {
                         <input
                             type="text"
                             name="username"
+                            minLength = "3"
                             required
                             value={inputs.username}
                             onChange={handleOnchange}
@@ -125,6 +126,7 @@ const RegisterForm = () => {
                         <input
                             type="password"
                             required
+                            minLength = "8"
                             name="password"
                             value={inputs.password}
                             onChange={handleOnchange}
@@ -137,6 +139,7 @@ const RegisterForm = () => {
                         <input
                             type="password"
                             required
+                            minLength = "8"
                             name="confirmpassword"
                             value={inputs.confirmpassword}
                             onChange={handleOnchange}
